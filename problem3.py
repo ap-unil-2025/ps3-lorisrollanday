@@ -45,8 +45,8 @@ def analyze_numbers(numbers):
     analysis["count"] = len(numbers)
     analysis["sum"] = sum(numbers)
     analysis["average"] = analysis["sum"] / analysis["count"]
-    analysis["min"] = min(numbers)
-    analysis["max"] = max(numbers)
+    analysis["minimum"] = min(numbers)   # ✅ changer clé
+    analysis["maximum"] = max(numbers)   # ✅ changer clé
 
     # Count even & odd (only for integers)
     even_count = 0
@@ -62,6 +62,7 @@ def analyze_numbers(numbers):
     analysis["odd_count"] = odd_count
 
     return analysis
+
 
 
 def display_analysis(analysis):
