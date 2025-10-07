@@ -49,6 +49,7 @@ def analyze_numbers(numbers):
     analysis["maximum"] = max(numbers)   # ✅ changer clé
 
     # Count even & odd (only for integers)
+    non = 0
     even_count = 0
     odd_count = 0
     for num in numbers:
